@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Grid Chessboard</title>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="letters">
+                <div class="box-inner">A</div>
+                <div class="box-inner">B</div>
+                <div class="box-inner">C</div>
+                <div class="box-inner">D</div>
+                <div class="box-inner">E</div>
+                <div class="box-inner">F</div>
+                <div class="box-inner">G</div>
+                <div class="box-inner">H</div>
+            </div>
+        </div>
+
+        <div class="left">
+            <div class="numbers">
+                <div class="box-inner"></div>
+                <div class="box-inner">8</div>
+                <div class="box-inner">7</div>
+                <div class="box-inner">6</div>
+                <div class="box-inner">5</div>
+                <div class="box-inner">4</div>
+                <div class="box-inner">3</div>
+                <div class="box-inner">2</div>
+                <div class="box-inner">1</div>
+            </div>
+        </div>
+        <div class="board">
+            <div class="A8 box" id="dark_rook-l"><img src="media/tour.png" alt="La tour"></div>
+            <div class="B8 box" id="dark_knight-l"><img src="media/cavalier.png" alt="Le cavalier"></div>
+            <div class="C8 box" id="dark_bishop-l"><img src="media/fou.png" alt="Le fou"></div>
+            <div class="D8 box" id="dark_queen"><img src="media/reine.png" alt="La reine"></div>
+            <div class="E8 box" id="dark_king"><img src="media/roi.png" alt="Le roi"></div>
+            <div class="F8 box" id="dark_bishop-r"><img src="media/fou.png" alt="Le fou"></div>
+            <div class="G8 box" id="dark_knight-r"><img src="media/cavalier.png" alt="Le cavalier"></div>
+            <div class="H8 box" id="dark_rook-r"><img src="media/tour.png" alt="La tour"></div>
+
+            <div class="A7 box" id="dark_pawn1"><img src="media/pion.png" alt="Le pion"></div>
+            <div class="B7 box" id="dark_pawn2"><img src="media/pion.png" alt="Le pion"></div>
+            <div class="C7 box" id="dark_pawn3"><img src="media/pion.png" alt="Le pion"></div>
+            <div class="D7 box" id="dark_pawn4"><img src="media/pion.png" alt="Le pion"></div>
+            <div class="E7 box" id="dark_pawn5"><img src="media/pion.png" alt="Le pion"></div>
+            <div class="F7 box" id="dark_pawn6"><img src="media/pion.png" alt="Le pion"></div>
+            <div class="G7 box" id="dark_pawn7"><img src="media/pion.png" alt="Le pion"></div>
+            <div class="H7 box" id="dark_pawn8"><img src="media/pion.png" alt="Le pion"></div>
+
+            <div class="A6 box"></div>
+            <div class="B6 box"></div>
+            <div class="C6 box"></div>
+            <div class="D6 box"></div>
+            <div class="E6 box"></div>
+            <div class="F6 box"></div>
+            <div class="G6 box"></div>
+            <div class="H6 box"></div>
+
+            <div class="A5 box"></div>
+            <div class="B5 box"></div>
+            <div class="C5 box"></div>
+            <div class="D5 box"></div>
+            <div class="E5 box"></div>
+            <div class="F5 box"></div>
+            <div class="G5 box"></div>
+            <div class="H5 box"></div>
+
+            <div class="A4 box"></div>
+            <div class="B4 box"></div>
+            <div class="C4 box"></div>
+            <div class="D4 box"></div>
+            <div class="E4 box"></div>
+            <div class="F4 box"></div>
+            <div class="G4 box"></div>
+            <div class="H4 box"></div>
+
+            <div class="A3 box"></div>
+            <div class="B3 box"></div>
+            <div class="C3 box"></div>
+            <div class="D3 box"></div>
+            <div class="E3 box"></div>
+            <div class="F3 box"></div>
+            <div class="G3 box"></div>
+            <div class="H3 box"></div>
+
+            <div class="A2 box" id="white_pawn1"><img src="media/pion_blanc.png" alt="Le pion"></div>
+            <div class="B2 box" id="white_pawn2"><img src="media/pion_blanc.png" alt="Le pion"></div>
+            <div class="C2 box" id="white_pawn3"><img src="media/pion_blanc.png" alt="Le pion"></div>
+            <div class="D2 box" id="white_pawn4"><img src="media/pion_blanc.png" alt="Le pion"></div>
+            <div class="E2 box" id="white_pawn5"><img src="media/pion_blanc.png" alt="Le pion"></div>
+            <div class="F2 box" id="white_pawn6"><img src="media/pion_blanc.png" alt="Le pion"></div>
+            <div class="G2 box" id="white_pawn7"><img src="media/pion_blanc.png" alt="Le pion"></div>
+            <div class="H2 box" id="white_pawn8"><img src="media/pion_blanc.png" alt="Le pion"></div>
+
+            
+            <div class="A1 box" id="white_rook-l"><img src="media/tour_blanc.png" alt="La tour"></div>
+            <div class="B1 box" id="white_knight-l"><img src="media/cavalier_blanc.png" alt="Le cavalier"></div>
+            <div class="C1 box" id="white_bishop-l"><img src="media/fou_blanc.png" alt="Le fou"></div>
+            <div class="D1 box" id="white_queen"><img src="media/reine_blanc.png" alt="La reine"></div>
+            <div class="E1 box" id="white_king"><img src="media/roi_blanc.png" alt="Le roi"></div>
+            <div class="F1 box" id="white_bishop-r"><img src="media/fou_blanc.png" alt="Le fou"></div>
+            <div class="G1 box" id="white_kinght-r"><img src="media/cavalier_blanc.png" alt="Le cavalier"></div>
+            <div class="H1 box" id="white_rook-r"><img src="media/tour_blanc.png" alt="La tour"></div>
+        </div>
+        
+    </div>
+</body>
+</html>
