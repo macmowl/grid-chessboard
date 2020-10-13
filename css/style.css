@@ -7,7 +7,7 @@ body {
   height: 100vh;
   align-items: center; }
 
-.container {
+main {
   border: 20px solid lightcoral;
   display: grid;
   width: 680px;
@@ -16,41 +16,41 @@ body {
   grid-template-columns: 40px 1fr;
   grid-template-rows: 40px 1fr;
   grid-auto-flow: row; }
-  .container .top {
+  main .top {
     display: grid;
     align-items: stretch;
     grid-column-start: 2;
     grid-column-end: 10;
     grid-row-start: 1;
     grid-row-end: 1; }
-    .container .top .letters {
+    main .top .letters {
       display: grid;
       grid-template-columns: repeat(8, 80px);
       grid-template-rows: auto;
       grid-auto-flow: row;
       align-items: stretch; }
-      .container .top .letters .box-inner {
+      main .top .letters .box-inner {
         text-align: center;
         align-self: center;
         width: 80px;
         justify-self: stretch; }
-  .container .left {
+  main .left {
     display: grid;
     align-self: stretch;
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 10; }
-    .container .left .numbers {
+    main .left .numbers {
       display: grid;
       grid-template-columns: auto;
       grid-template-rows: 40px repeat(8, auto);
       grid-auto-flow: column;
       align-items: stretch; }
-      .container .left .numbers .box-inner {
+      main .left .numbers .box-inner {
         text-align: center;
         align-self: center; }
-  .container .board {
+  main .board {
     display: grid;
     grid-template-columns: repeat(8, 80px);
     grid-template-rows: repeat(8, 80px);
@@ -58,9 +58,7 @@ body {
     grid-column: 2/2;
     grid-row: 2/2;
     background-image: url("../media/chessboard.png"); }
-    .container .board .box {
-      width: 80px;
-      height: 80px;
+    main .board .box {
       box-sizing: border-box;
       padding-top: 5px;
       padding-left: 5px; }

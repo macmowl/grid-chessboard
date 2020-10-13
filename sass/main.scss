@@ -9,7 +9,7 @@ body {
     align-items: center;
 }
 
-.container {
+main {
     border: 20px solid lightcoral;
     display: grid;
     width: 680px;
@@ -20,7 +20,7 @@ body {
     grid-auto-flow: row;
 
 
-
+    // create a grid to display letters elements in 1st row
     .top {
         display: grid;
         align-items: stretch;
@@ -46,6 +46,7 @@ body {
 
     }
 
+    // display numbers elements in column with grid
     .left {
         display: grid;
         align-self: stretch;
@@ -68,6 +69,7 @@ body {
         }
     }
 
+    // create the board with grid
     .board {
         display: grid;
         grid-template-columns: repeat(8, 80px);
@@ -87,25 +89,10 @@ body {
         background-image: url('../media/chessboard.png');
 
         .box {
-            width: 80px;
-            height: 80px;
             box-sizing: border-box;
             padding-top: 5px;
             padding-left: 5px;
         }
-    
-        // I spent to much time on this to simply delete it :/
-        // .box:nth-child(-2n+7),
-        // .box:nth-child(9) ~ div:nth-child(-2n+16),
-        // .box:nth-child(15) ~ div:nth-child(-2n+23),
-        // .box:nth-child(25) ~ div:nth-child(-2n+32),
-        // .box:nth-child(31) ~ div:nth-child(-2n+39),
-        // .box:nth-child(41) ~ div:nth-child(-2n+48),
-        // .box:nth-child(47) ~ div:nth-child(-2n+55),
-        // .box:nth-child(57) ~ div:nth-child(-2n+64) {
-        //     background-color: #8dbfd8;
-        //     color: #fff;
-        // }  
         
     }
 
