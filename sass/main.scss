@@ -21,59 +21,46 @@ main {
 
 
     // create a grid to display letters elements in 1st row
-    .top {
+    .letters {
         display: grid;
+        grid-template-columns: repeat(8, 12.5%);
+        grid-template-rows: auto;
+        grid-auto-flow: row;
         align-items: stretch;
         grid-column-start: 2;
         grid-column-end: 10;
         grid-row-start: 1;
         grid-row-end: 1;
 
-        .letters {
-            display: grid;
-            grid-template-columns: repeat(8, 80px);
-            grid-template-rows: auto;
-            grid-auto-flow: row;
-            align-items: stretch;
-
-            .box-inner {
-                text-align: center;
-                align-self: center;
-                width: 80px;
-                justify-self: stretch;
-            }
+        .box-inner {
+            text-align: center;
+            justify-content: center;
         }
-
     }
 
     // display numbers elements in column with grid
-    .left {
+    .numbers {
         display: grid;
-        align-self: stretch;
+        grid-template-columns: auto;
+        grid-template-rows: 40px repeat(8, auto);
+        grid-auto-flow: column;
+        align-items: stretch;
         grid-column-start: 1;
         grid-column-end: 1;
         grid-row-start: 1;
         grid-row-end: 10;
 
-        .numbers {
-            display: grid;
-            grid-template-columns: auto;
-            grid-template-rows: 40px repeat(8, auto);
-            grid-auto-flow: column;
-            align-items: stretch;
-
-            .box-inner {
-                text-align: center;
-                align-self: center;
-            }
+        .box-inner {
+            text-align: center;
+            align-self: center;
         }
     }
 
     // create the board with grid
     .board {
         display: grid;
-        grid-template-columns: repeat(8, 80px);
-        grid-template-rows: repeat(8, 80px);
+        grid-template-columns: repeat(8, 12.5%);
+        grid-template-rows: repeat(8, 12.5%);
         grid-template-areas: 
             "A8 B8 C8 D8 E8 F8 G8 H8"
             "A7 B7 C7 D7 E7 F7 G7 H7"
@@ -115,7 +102,7 @@ main {
 #dark_pawn6 { grid-area: F7;  }
 #dark_pawn7 { grid-area: G7;  }
 #dark_pawn8 { grid-area: H7;  }
- 
+
 #white_pawn1 { grid-area: A2; }
 #white_pawn2 { grid-area: B2; }
 #white_pawn3 { grid-area: C2; }
