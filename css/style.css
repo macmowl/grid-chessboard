@@ -58,7 +58,102 @@ main {
     grid-column: 2/2;
     grid-row: 2/2;
     background-image: url("../media/chessboard.png"); }
-    main .board .box {
-      box-sizing: border-box;
-      padding-top: 5px;
-      padding-left: 5px; }
+    main .board img {
+      align-self: center;
+      justify-self: center; }
+
+#dark_rook-l {
+  grid-area: A8; }
+
+#dark_knight-l {
+  grid-area: B8; }
+
+#dark_bishop-l {
+  grid-area: C8; }
+
+#dark_queen {
+  grid-area: D8; }
+
+#dark_king {
+  grid-area: E8; }
+
+#dark_bishop-r {
+  grid-area: F8; }
+
+#dark_knight-r {
+  grid-area: G8; }
+
+#dark_rook-r {
+  grid-area: H8; }
+
+#dark_pawn1 {
+  grid-area: A7; }
+
+#dark_pawn2 {
+  grid-area: B7; }
+
+#dark_pawn3 {
+  grid-area: C7; }
+
+#dark_pawn4 {
+  grid-area: D7; }
+
+#dark_pawn5 {
+  grid-area: E7; }
+
+#dark_pawn6 {
+  grid-area: F7; }
+
+#dark_pawn7 {
+  grid-area: G7; }
+
+#dark_pawn8 {
+  grid-area: H7; }
+
+#white_pawn1 {
+  grid-area: A2; }
+
+#white_pawn2 {
+  grid-area: B2; }
+
+#white_pawn3 {
+  grid-area: C2; }
+
+#white_pawn4 {
+  grid-area: D2; }
+
+#white_pawn5 {
+  grid-area: E2; }
+
+#white_pawn6 {
+  grid-area: F2; }
+
+#white_pawn7 {
+  grid-area: G2; }
+
+#white_pawn8 {
+  grid-area: H2; }
+
+#white_rook-l {
+  grid-area: A1; }
+
+#white_knight-l {
+  grid-area: B1; }
+
+#white_bishop-l {
+  grid-area: C1; }
+
+#white_queen {
+  grid-area: D1; }
+
+#white_king {
+  grid-area: E1; }
+
+#white_bishop-r {
+  grid-area: F1; }
+
+#white_knight-r {
+  grid-area: G1; }
+
+#white_rook-r {
+  grid-area: H1; }
